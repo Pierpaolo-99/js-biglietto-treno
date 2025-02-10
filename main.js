@@ -29,6 +29,12 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio,
 
  // sconto per minorenni
 
+ if (userAge < 18){
+    priceTicket * 20 / 100
+ } else{
+    priceTicket
+ }
+ console.log(priceTicket);
  
  
  
