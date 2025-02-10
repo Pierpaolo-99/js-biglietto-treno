@@ -24,13 +24,20 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio,
 
  // generare il prezzo del biglietto 
 
- const priceTicket = numberKm * 0.21
- console.log(priceTicket);
+ let priceTicket = numberKm * 0.21
 
  // sconto per minorenni
 
  if (userAge < 18){
-    priceTicket * 20 / 100
+    priceTicket = priceTicket - (priceTicket * 0.2)
+ } else{
+    priceTicket
+ }
+
+ // sconto per over 65
+
+ if (userAge > 65){
+    priceTicket = priceTicket - (priceTicket * 0.4)
  } else{
     priceTicket
  }
