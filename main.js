@@ -41,8 +41,11 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio,
  } else{
     priceTicket
  }
+
+ // output prezzo forma umana
+
+ priceTicket = priceTicket.toFixed(2)
  console.log(priceTicket);
- 
  
  
  
